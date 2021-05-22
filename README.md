@@ -63,15 +63,15 @@ pyber_summary_df = pd.DataFrame({
 ```
 And, after formatting, we show the following:
 
-INSERT IMAGE HERE
+![](https://github.com/jo-robles/PyBer_Analysis/blob/ea391ace40e3e607c139bd2dd6405dad62e86c72/Analysis/PyBer_summary.PNG)
 
 Based on this merged DataFrame, we can draw the following conclusions about our PyBer data:
 
-1) Although there are siginificantly more Urban Rides and Drivers, the average fare per ride and per Driver is lower than the other two categories. We can make an assumption then that Urban drivers, while more frequent, are simply not taking longer routes or more time in their driving as compared to other city types. However, the sheer volume of drivers/riders (and total fares) makes this the most lucrative portion of the business.
+1) Although there are significantly more Urban Rides and Drivers, the average fare per ride and per Driver is lower than the other two categories. We can make an assumption then that Urban drivers, while more frequent, are simply not taking longer routes or more time in their driving as compared to other city types. However, the sheer volume of drivers/riders (and total fares) makes this the most lucrative portion of the business.
 
 2) Rural fares per driver are the highest among the city types. Considering that most individuals who would be utilizing a ride service would be travelling longer distances (as a result of being rural), this stands to reason. 
 
-3. The suburbs seem to occupy the "middle" ground between the two extremes that are present. Perhaps these individuals are utilizing the ride-service to take rides that are considered more "ocassional" or on special occassions. 
+3. The suburbs seem to occupy the "middle" ground between the two extremes that are present. Perhaps these individuals are utilizing the ride-service to take rides that are considered more "occasional" or on special occasions. 
 
 In addition to our summary DataFrame, we also sought to understand how weekly fares stacked against each of the city types presented within our data. To do so, after some initial drilling down, we created a PivotTable from a DataFrame focused between January - April utilizing the ```.loc``` function:
 
@@ -107,7 +107,7 @@ plt.savefig('Analysis/PyBer_Fare_summary.png')
 
 In our code above, we utilized the FiveThirtyEight style, set our labels and title and finally, saved our graph to the Analysis folder by the name 'PyBer_Fare_Summary.png'
 
-INSERT GRAPH HERE
+![](https://github.com/jo-robles/PyBer_Analysis/blob/ea391ace40e3e607c139bd2dd6405dad62e86c72/Analysis/PyBer_fare_summary.png)
 
 From this graph, we can draw the following conclusions:
 
@@ -115,14 +115,12 @@ From this graph, we can draw the following conclusions:
 
 2) On the exact opposite side of the spectrum, we have the Urban fare types. While the average fare per driver/rider is lower than other city types, we see that the total fares brought in are higher per week than other city types. This means, that the sheer volume of riders/drivers we see for the urban city types make up for any lower average amounts.
 
-3) And similarly, as before with the averages, we see that the Suburban city types maintain mostly within the middle with ocassional spikes as we move past april and slightly before March.
-
-There is a description of the differences in ride-sharing data among the different city types. Ride-sharing data include the total rides, total drivers, total fares, average fare per ride and driver, and total fare by city type. (7 pt)
+3) And similarly, as before with the averages, we see that the Suburban city types maintain mostly within the middle with occasional spikes as we move past April and slightly before March.
 
 ## Summary:
 
 Based on the information presented above, the following stand as three business recommendations to address disparities among the city types:
 
-1) In consideration of the total fares brought in per week, PyBer would do well to consider maintaing a strong presence within urban city types. A further analysis of the reasons why the average fare per driver is lower than other city types would be warranted. Although it is suspected that the length of the ride is shorter as compared to other city types, a deeper analysis would either substantiate or disregard this.  
-2) For the Rural city type, and in consideration of the average fare per driver, there seems to be an opportunity to do more marketing or increase the presense of PyBer in this area. However, what remains to be seen is the exact utilization of these services if presence is increased. We see this concern manifest in the total fares per week as compared to other city types. Therefore, while more brand awareness and marketing could certainly help, will this translate into more usage? Further analysis would be warranted. 
-3) For the suburban city types, a small spike in the total fares is observed between the months of February and March and dip is observed in the later part of April. These two instances stand out as otherwise, the suburban city type tends to be fairly stable. Further analysis would be warranted to determine the reasoning behind the small spike and small dip in their respective months. Understanding these causes could provide some direction of how PyBer should either react or what they should fix. 
+1) In consideration of the total fares brought in per week, PyBer would do well to consider maintaining a strong presence within urban city types. A further analysis of the reasons why the average fare per driver is lower than other city types would be warranted. Although it is suspected that the length of the ride is shorter as compared to other city types, a deeper analysis would either substantiate or disregard this.  
+2) For the Rural city type, and in consideration of the average fare per driver, there seems to be an opportunity to do more marketing or increase the presence of PyBer in this area. However, what remains to be seen is the exact utilization of these services if presence is increased. We see this concern manifest in the total fares per week as compared to other city types. Therefore, while more brand awareness and marketing could certainly help, will this translate into more usage? Further analysis would be warranted. 
+3) For the suburban city types, a small spike in the total fares is observed between the months of February and March and dip is observed in the later part of April. These two instances stand out as otherwise, the suburban city type tends to be stable. Further analysis would be warranted to determine the reasoning behind the small spike and small dip in their respective months. Understanding these causes could provide some direction of how PyBer should either react or what they should fix.
